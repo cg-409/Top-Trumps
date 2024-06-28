@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Trumps: Cyber Security APTs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="logo-container">
+        <img src="stem-logo.png" alt="STEM Logo" id="stem-logo">
+    </div>
+    <div id="game">
+        <div id="cards">
+            <div id="current-player-card" class="card-container"></div>
+            <div id="current-opponent-card" class="card-container"></div>
+        </div>
+        <div id="result" class="result-container"></div>
+        <div id="controls" class="controls-container">
+            <button id="start-button" onclick="startGame()">Start Game</button>
+            <div id="attribute-buttons" style="display: none;">
+                <button onclick="playRound('sophistication')">Sophistication</button>
+                <button onclick="playRound('impact')">Impact</button>
+                <button onclick="playRound('stealth')">Stealth</button>
+                <button onclick="playRound('resources')">Resources</button>
+                <button onclick="playRound('notoriety')">Notoriety</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
